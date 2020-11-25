@@ -14,8 +14,8 @@ bot = commands.Bot(command_prefix='!')
 
 @bot.command(name='Q', help='Pour en savoir plus sur ta joueuse')
 async def question(ctx):
-    question = ["Bienvenue parmi nous ! Si vous pouviez juste ne pas oublier d'essuyer vos pieds en entrant la prochaine fois, ce serait parfait. Je n'ai pas que ça à faire de nettoyer derrière vous ! Oh, ce n'est pas une question... vous avez raison ! Hé bien qu'attendez-vous, tapez à nouveau !Q pour que je vous en pose une nouvelle. On ne va pas y passer la journée !",
-    "Quel est le jeu que tu rêves d'écrire ? <br /> test de saut de ligne 1", 
+    question = ["Bienvenue parmi nous ! Si vous pouviez juste ne pas oublier d'essuyer vos pieds en entrant la prochaine fois, ce serait __parfait__. Je n'ai pas que ça à faire de nettoyer derrière vous ! Oh, ce n'est pas une question... vous avez raison ! Hé bien qu'attendez-vous, tapez à nouveau !Q pour que je vous en pose une nouvelle. On ne va pas y passer la journée !",
+    "Quel est le jeu que tu rêves d'écrire ?", 
     "Quelle est la recette de plat que tu as inventé un jour et qui a été complètement foireuse ?",
     "Quelle invention technologique souhaiterais-tu créer pour te faciliter la vie quotidienne ?",
     "quelle technique de créativité de groupe privilégierais-tu ?",
