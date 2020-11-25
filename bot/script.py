@@ -36,7 +36,8 @@ async def question(ctx):
 
 @bot.command(name='W', help='Pour accueillir les nouvelles têtes')
 async def welcome (ctx):
-    welcome = ["Ceci est un message d'accueil de test, bande de chenapans !"]
-    await ctx.send(response)
+	welcome = ["Ceci est un message d'accueil de test, bande de chenapans !"]
+	response = random.choice(welcome)
+	await ctx.send(response)
 
 bot.run(TOKEN)
