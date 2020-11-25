@@ -15,10 +15,10 @@ bot = commands.Bot(command_prefix='!')
 @bot.command(name='Q', help='Pour en savoir plus sur ta joueuse')
 async def question(ctx):
     question = ["Bienvenue parmi nous ! Si vous pouviez juste ne pas oublier d'essuyer vos pieds en entrant la prochaine fois, ce serait **parfait**. Je n'ai pas que ça à faire de nettoyer derrière vous ! Oh, ce n'est pas une question... vous avez raison ! Hé bien qu'attendez-vous, tapez à nouveau **!Q** pour que je vous en pose une nouvelle. \nOn ne va pas y passer la journée !",
-    "Quel est le jeu que tu rêves d'écrire ? Et puis santé au passage ! :beers:", 
-    "Quelle est la recette de plat que tu as inventé un jour et qui a été complètement foireuse ?",
-    "Quelle invention technologique souhaiterais-tu créer pour te faciliter la vie quotidienne ?",
-    "quelle technique de créativité de groupe privilégierais-tu ?",
+    "Welcome, my dear. Alors comme ça vous aimez les jeux ? A votre âge ? \nNon, non, je ne ris pas dans ma barbe. D'ailleurs, sachez que ça s'appelle une moustache. \nMais nous nous égarons. Donc les jeux... Dites-moi, quel est le jeu que vous rêveriez d'écrire ?", 
+    "Ah, encore une nouvelle tête ! Décidément, ça n'arrête pas ! \nDe vous à moi, je vois bien que vous êtes plutôt une personne gourmande. Et pourtant, je suis certain que vous avez un sombre secret culinaire... Racontez-moi tout : quelle est la recette de plat que vous avez inventée un jour et qui a été complètement ratée ?",
+    "J'arrive ! J'arrive ! Non, mais vous croyez que je n'ai que ça à faire ? Comment ça, **oui ?** Si seulement j'avais un automate pour faire ce job à ma place.\nTiens, puisqu'on parle de ça, dites-moi, quelle invention technologique souhaiteriez-vous créer pour vous faciliter la vie au quotidien ?",
+    "Parlons peu mais parlons bien. Il parait que dans le domaine de la créativité et du management, vous êtes une pointure ! Alors j'aimerais savoir : si vous aviez à créer quelque chose avec vos petits camarades, quelle technique pour stimuler la créativité de groupe inventeriez-vous ?",
     "Félicitation ! Tu viens de créer un nouveau monde. Dis nous pourquoi celui-ci est parfait !",
     " Tu as adoré ce livre/film mais la fin t'as déçue, tu l'as réécrite dans ta tête, de quoi ça parle et qu'as tu changé ?",
     "T'es-tu déjà dit que le monde 'réel' n'existait qu'à travers ta perception? Quel serait selon toi le 'vrai' monde?",
@@ -33,5 +33,10 @@ async def question(ctx):
     response = random.choice(question)
     await ctx.send(response)
 
+
+@bot.command(name='W', help='Pour accueillir les nouvelles têtes')
+async def welcome (ctx):
+welcome = ["Ceci est un message d'accueil de test, bande de chenapans !"]
+await ctx.send(response)
 
 bot.run(TOKEN)
