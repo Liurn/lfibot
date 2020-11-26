@@ -79,7 +79,7 @@ async def question(ctx):
 
 @bot.command(name='We', help='Pour accueillir les nouvelles têtes')
 async def welcome (ctx):
-	welcome = ["Hem, hem.\n1, 2, 1, 2, test micro !\nBien, puisque vous m'entendez tous ! \n**Bienvenue dans au Registre de la Fabrique Imaginaire.** \nIci, nous vous demanderons de vous présenter... comme bon vous semble. Essayez d'être simplement originaux, si vous le pouvez. Nous sommes à la Fabrique Imaginaire, que diable ! \nMais avant de commencer votre petit texte de présentation, veuillez taper **!Q** puis **Entrée** une seule fois, pour obtenir une question du Registre à inclure à votre présentation. A vos claviers !"]
+	welcome = ["Hem, hem.\n1, 2, 1, 2, test micro !\nBien, puisque vous m'entendez tous ! \n\n**Bienvenue dans au Registre de la Fabrique Imaginaire.** \nIci, nous vous demanderons de vous présenter... comme bon vous semble. Essayez d'être simplement originaux, si vous le pouvez. Nous sommes à la Fabrique Imaginaire, que diable ! \n\nMais avant de commencer votre petit texte de présentation, \n :point_right: veuillez taper **!Q** puis **Entrée** une seule fois, pour obtenir une question du Registre à inclure à votre présentation. \n\nA vos claviers !"]
 	response = random.choice(welcome)
 	await ctx.send(response)
 
